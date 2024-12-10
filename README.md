@@ -5,7 +5,7 @@ La prueba técnica consta de dos partes, y su objetivo es evaluar tus habilidade
 
 ## Instrucciones
 
-Hemos preparado un [repositorio](https://github.com/desarrollo-vivelibre/frontend-test-2) que contiene un proyecto que simula una parte de una aplicación real. El proyecto tiene algunos errores y funcionalidades incompletas que debes corregir. Deberás hacer un fork del repositorio, trabajar sobre los fallos/requisitos especificados y luego comparte con nosotros en un fichero .zip los cambios con tus soluciones.
+Hemos preparado un [repositorio](https://github.com/desarrollo-vivelibre/frontend-test-2) que contiene un proyecto que simula una parte de una aplicación real. El proyecto tiene algunos errores y funcionalidades incompletas que debes corregir. Deberás descargarte el repositorio(no hacer Fork), trabajar sobre los fallos/requisitos especificados y luego comparte con nosotros en un fichero .zip los cambios con tus soluciones.
 
 ### **Parte 1: Implementación de Login**
 En esta parte de la prueba, el diseño del login ya está maquetado, pero la funcionalidad aún no está implementada. Tu tarea es:
