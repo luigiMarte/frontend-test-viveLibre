@@ -9,8 +9,6 @@
         height="100"
       />
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
-      <p>johnd</p>
-      <p>m38rmF$</p>
       <input
         type="text"
         id="username"
