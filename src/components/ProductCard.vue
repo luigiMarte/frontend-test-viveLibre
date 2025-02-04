@@ -1,6 +1,10 @@
 <template>
   <div class="product-item">
-    <span class="icono favorite"></span>
+    <span
+      class="icono favorite"
+      :class="{ selected: productSelected }"
+      @click="onFavoriteClicked"
+    ></span>
     <img :src="product.image" :alt="product.title" class="product-image" />
     <h3 class="product-title">{{ product.title }}</h3>
     <p class="product-description">{{ product.description }}</p>
@@ -10,19 +14,20 @@
 
 <script>
 export default {
-  name: 'ProductCard',
-  props: ['product'],
-  data () {
+  name: "ProductCard",
+  props: ["product"],
+  data() {
     return {
-
-    }
+      productSelected: false,
+    };
   },
   methods: {
-    onFavoriteClicked () {
-      this.$emit('productFavoriteClicked', this.product.id)
-    }
-  }
-}
+    onFavoriteClicked() {
+      this.productSelected = !this.productSelected;
+      this.$emit("productFavoriteClicked", this.product.id);
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -79,11 +84,11 @@ span.icono.favorite::before {
 }
 
 .favorite-icon {
-  background-image: url('../assets/favorite-filled-muted.svg');
+  background-image: url("../assets/favorite-filled-muted.svg");
 }
 
 .favorite-icon.selected {
-  background-image: url('../assets/favorite-filled-red.svg');
+  background-image: url("../assets/favorite-filled-red.svg");
 }
 
 span.icono {
