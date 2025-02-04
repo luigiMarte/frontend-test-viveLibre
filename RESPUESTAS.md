@@ -1,15 +1,15 @@
 # RESPUESTAS Y errores corregidos
 
-## 1- error al ajecutar npm run serve:
+## Error al ajecutar npm run serve:
 
 Al ejecutar por primera vez npm run serve la consola develve el siguiente error :
-ERROR Failed to compile with 1 error 15:51:24
-Module not found: Can't resolve '@popperjs/core
-error in ./node_modules/bootstrap/dist/js/bootstrap.esm.j
 
-### solucion
+- ERROR Failed to compile with 1 error 15:51:24......Module not found: Can't resolve '@popperjs/core
+- error in ./node_modules/bootstrap/dist/js/bootstrap.esm.j
 
-Instlar la dependencia que falta con : npm install @popperjs/core
+## solucion:
+
+- Instalar la dependencia que falta con : npm install @popperjs/core
 
 ## PREGUNTA NUM 1 : Implementación de Login
 
@@ -44,7 +44,7 @@ Instlar la dependencia que falta con : npm install @popperjs/core
   - Se elimina el for y se usa filter para guardar en un array dentro de Data() los id de los producto seleccionados.Teniendo un id no es necesario guardar todo el poducto.
   - Se añade un botón para hacer logout que redirija al login y finalice la sesión. (se elimina el token)
 
-### ### ProductCard.vue
+### ProductCard.vue
 
 - Faltaba onclick en el icono del product card para lanzar el emit.
 - Se ha añadido una clase dinámica para que el corazón sea rojo cuando se selecciona el producto , al hacer click en el corazon. Funciona como un toggle. Pasa de gris a rojo según este o no seleccionado.
